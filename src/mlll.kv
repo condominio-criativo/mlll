@@ -1,0 +1,89 @@
+<WelcomeScreen>:
+  BoxLayout:
+    orientation: "vertical"
+    
+    Label:
+      text: "A Máquina de Libertar Livros Livres"
+      
+    Button:
+      text: "Começar!"
+      on_release: app.route = "/meta"
+
+<MetaScreen>:
+  BoxLayout:
+    orientation: "vertical"
+    
+    Label:
+      text: "Info Livro"
+      
+    Button:
+      text: "Continuar"
+      on_release: app.route = "/consent"
+
+    Button:
+      text: "Cancelar"
+      on_release: app.route = "/"
+
+<ConsentScreen>:
+  BoxLayout:
+    orientation: "vertical"
+
+    Label:
+      text: "Eu, abaixo assinado, confirmo que o livro a ser digitalizado se encontra sob o domínio público"
+
+    Button:
+      text: "Continuar"
+      on_release: app.route = "/crop"
+
+    Button:
+      text: "Cancelar"
+      on_release: app.route = "/"
+
+<CropScreen>:
+  BoxLayout:
+    orientation: "vertical"
+
+    Label:
+      text: "Escolha o enquadramento"
+    
+    Button:
+      text: "Continuar"
+      on_release: app.route = "/scan"
+
+    Button:
+      text: "Cancelar"
+      on_release: app.route = "/"
+
+<ScanScreen>:
+  BoxLayout:
+    orientation: "vertical"
+    
+    Label:
+      text: "Guardar Página?"
+
+    Button:
+      text: "Sim"
+      on_release: app.route = "/scan"
+      
+    Button:
+      text: "Não"
+      on_release: app.route = "/scan"
+
+    Button:
+      text: "Cancelar"
+      on_release: app.route = "/"
+
+    Button:
+      text: "Terminar"
+      on_release: app.route = "/thanks"
+      
+<ThankScreen>:
+  BoxLayout:
+    orientation: "vertical"
+    
+    Label:
+      text: "Obrigado por ter libertado mais um livro"
+
+    Button:
+      text: "Voltar ao início"
+      on_release: app.route = "/"
