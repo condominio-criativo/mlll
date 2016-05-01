@@ -1,10 +1,6 @@
 #! /usr/bin/env python3
 # mlll.py - A Máquina de Libertar Livros Livres
 
-import os
-
-os.environ['KIVY_WINDOW'] = "sdl2"
-
 from kivy.garden.router import AppRouter, Router, route
 from kivy.uix.screenmanager import Screen
 from kivy.lang import Builder
