@@ -1,3 +1,4 @@
 Cython==0.23
 Kivy==1.9.1
-
+# also, get Kivy.router after installing Kivy using the garden command:
+# garden install router
