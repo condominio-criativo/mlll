@@ -1,0 +1,9 @@
+# Tarefas pendentes
+
+ * receber os dados do livro e utilizador
+ * reduzir o tamanho relativo dos controlos
+ * implementar os controlos de cropping
+ * evitar re-inicializar a camara quando se troca de ecra
+ * implementar o scanjob (scan+crop+save)
+ * melhorar o design do interface
+ * implementar a pipeline de pós-scan (ocr -> zip -> upload)

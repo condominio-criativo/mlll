@@ -4,4 +4,5 @@ include/
 lib/
 pip-selfcheck.json
 share/
+local/
 

@@ -1,3 +1,4 @@
+
 <WelcomeScreen>:
   BoxLayout:
     orientation: "vertical"
@@ -45,10 +46,21 @@
 
     Label:
       text: "Escolha o enquadramento"
-    
+
+    Camera:
+      index: 0
+      resolution: (320, 200)
+      play: True
+
+    # Scatter:
+    #   id: crop_window
+    #   do_rotation: False
+    #   Rect:
+    #     color: green
+        
     Button:
       text: "Continuar"
-      on_release: app.route = "/scan"
+      on_release: app.start_scan()
 
     Button:
       text: "Cancelar"
@@ -59,14 +71,19 @@
     orientation: "vertical"
     
     Label:
-      text: "Guardar Página?"
+      text: "Digitalizar Página"
 
+    Camera:
+      #index: 0
+      #resolution: (320, 200)
+      #play: True
+      
     Button:
-      text: "Sim"
+      text: "Guardar Página"
       on_release: app.route = "/scan"
       
     Button:
-      text: "Não"
+      text: "Trocar Câmara"
       on_release: app.route = "/scan"
 
     Button:
@@ -74,7 +91,7 @@
       on_release: app.route = "/"
 
     Button:
-      text: "Terminar"
+      text: "Terminar Livro"
       on_release: app.route = "/thanks"
       
 <ThankScreen>:

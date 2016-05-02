@@ -1,5 +1,5 @@
-#! /usr/bin/env python3
-# mlll.py - A Máquina de Libertar Livros Livres
+#! /usr/bin/env python
+# mlll.py - A Maquina de Libertar Livros Livres
 
 from kivy.garden.router import AppRouter, Router, route
 from kivy.uix.screenmanager import Screen
@@ -71,5 +71,7 @@ class BookScanApp(AppRouter):
         self.root = MainRouter()
         self.route = "/"
 
+    def start_scan(self):
+        self.route = "/scan"
         
 BookScanApp().run()
