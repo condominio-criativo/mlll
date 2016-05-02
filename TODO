@@ -1,9 +1,37 @@
 # Tarefas pendentes
 
+## Código
+
  * receber os dados do livro e utilizador
- * reduzir o tamanho relativo dos controlos
  * implementar os controlos de cropping
- * evitar re-inicializar a camara quando se troca de ecra
+ * evitar re-inicializar a camara quando se troca de ecra (crash)
  * implementar o scanjob (scan+crop+save)
- * melhorar o design do interface
  * implementar a pipeline de pós-scan (ocr -> zip -> upload)
+ * implementar um serviço online para receber os scans e os disponibilizar publicamente
+
+## Interface
+
+ * reduzir o tamanho relativo dos botões e das labels
+ * melhorar o aspecto visual do interface (organização das widgets, cores, tipografia)
+ * rever todo o copy (texto de boas vindas, campos de formulário, textos dos botões, texto final)
+
+## Estrutura
+
+ * montar e testar a iluminação
+ * criar a frame para suportar/encaixar o touchscreen
+ * arranjar forma de colocar internamente uma extensão multipla para ficar só uma ficha no exterior
+
+## Hardware
+
+ * implementar updates automáticos da aplicação
+ * arranjar forma de permitir a administração remota do hardware
+ * adicionar um botão físico para activar o shutdown/reboot da máquina
+
+## Documentação
+
+ * documentar o hardware usado
+ * documentar o setup do hardware
+ * documentar o desenho físico da máquina (que estante foi usada, como foi modificada)
+ * documentar o desenho do interface
+ * documentar a estrutura do código
+ 
